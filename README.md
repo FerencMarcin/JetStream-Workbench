@@ -42,7 +42,7 @@ wails dev
 Then connect in the app to:
 
 ```text
-nats://localhost:4222
+nats://localhost:4223
 ```
 
 Create a stream, for example:
