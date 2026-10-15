@@ -2,6 +2,7 @@ package main
 
 import (
 	"embed"
+	"fmt"
 	"log"
 
 	"github.com/wailsapp/wails/v2"
@@ -12,11 +13,14 @@ import (
 //go:embed all:frontend/dist
 var assets embed.FS
 
+// appVersion is set from wails.json by build-exe.ps1 during release builds.
+var appVersion = "dev"
+
 func main() {
 	app := NewApp()
 
 	err := wails.Run(&options.App{
-		Title:     "JetStream Workbench",
+		Title:     fmt.Sprintf("JetStream Workbench v%s", appVersion),
 		Width:     1280,
 		Height:    820,
 		MinWidth:  1000,

@@ -9,5 +9,12 @@
   "author": {
     "name": "JetStream Workbench",
     "email": ""
+  },
+  "info": {
+    "companyName": "JetStream Workbench",
+    "productName": "JetStream Workbench",
+    "productVersion": "0.1.0",
+    "copyright": "Copyright (c) 2026 JetStream Workbench",
+    "comments": "NATS JetStream desktop workbench"
   }
 }

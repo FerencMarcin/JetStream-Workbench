@@ -74,14 +74,17 @@ Wails generates frontend bindings under `frontend/wailsjs` and starts Vite autom
 
 ## Production build
 
-```bash
-wails build
+Change `info.productVersion` in `wails.json`, then run from PowerShell:
+
+```powershell
+.\build-exe.ps1
 ```
 
-The produced executable is placed under:
+The version is automatically added to the window title and output filename. The
+produced executable is placed under:
 
 ```text
-build/bin/
+build/bin/jetstream-workbench-vX.Y.Z.exe
 ```
 
 For platform-specific packaging and dependencies, use:
